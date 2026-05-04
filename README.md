@@ -115,11 +115,11 @@ spec:
 apiVersion: sql-server.dotkube.io/v1alpha1
 kind: Database
 metadata:
-  name: example-database
+  name: hello-world-database
   namespace: sqlserver-example
 spec:
   instanceName: sqlserver-instance
-  databaseName: HelloWorld
+  databaseName: hello-world
 
 ---
 apiVersion: sql-server.dotkube.io/v1alpha1
@@ -141,7 +141,7 @@ metadata:
   namespace: sqlserver-example
 spec:
   sqlServerName: sqlserver-instance
-  databaseName: HelloWorld
+  databaseName: hello-world
   loginName: adminuser
   roles:
     - db_owner
@@ -154,7 +154,7 @@ metadata:
   namespace: sqlserver-example
 spec:
   instanceName: sqlserver-instance
-  databaseName: HelloWorld
+  databaseName: hello-world
   schemaName: Reporting
   schemaOwner: adminuser
 ```
